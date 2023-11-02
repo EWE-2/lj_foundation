@@ -7,8 +7,8 @@ const PassedEventCard = ({imgUrl, labelName, rate}) => {
             <h3 className='mt-2 text-2xl leading-normal font-semibold font-palanquin text-coral-red'>
                 {labelName}
             </h3>
-            <p className='mt-2 font-semibold font-montserrat text-sm leading-normal'>
-                test of texte
+            <p className='mt-2 font-semibold font-montserrat text-sm leading-normal text-clip overflow-hidden'>
+                {description}
             </p>
 
         </div>
