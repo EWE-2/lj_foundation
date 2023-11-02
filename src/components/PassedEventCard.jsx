@@ -1,4 +1,4 @@
-const PassedEventCard = ({imgUrl, labelName, rate}) => {
+const PassedEventCard = ({imgUrl, labelName, rate, description}) => {
   return (
     <div className="static flex flex-1 flex-col w-full max-sm:w-full">
         <img src={imgUrl} alt={labelName} className='w-full h-[280] rounded-lg' />
