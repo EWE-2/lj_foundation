@@ -8,9 +8,11 @@ import instagram from './instagram.svg'
 import support from './support.svg'
 import shieldTick from './shield-tick.svg'
 import star from './star.svg'
-import truckFast from './truck-fast.svg'
+import education from './truck-fast.svg'
 import twitter from './twitter.svg'
 import ljf from './ljf.svg'
+import info from './info.svg'
+import finance from './finance.svg'
 
 export {
     arrowRight,
@@ -23,7 +25,9 @@ export {
     support,
     shieldTick,
     star,
-    truckFast,
+    education,
     twitter,
-    ljf
+    ljf,
+    info,
+    finance
 }

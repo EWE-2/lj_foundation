@@ -1,9 +1,9 @@
 import Button from '../components/Bbutton';
 import { useState } from 'react';
 import { arrowRight } from '../assets/icons';
-import { bigShoe1, evtImg1 } from '../assets/images';
-import { eventsImages, shoes, statistics } from '../constants';
-import ShoeCard from '../components/ShoeCard';
+import { evtImg1 } from '../assets/images';
+import { eventsImages, statistics } from '../constants';
+import EventCard from '../components/EventCard';
 
 const Foundation = () => {
   const [EventImage, SetEventImage] = useState(evtImg1)
@@ -26,7 +26,7 @@ const Foundation = () => {
                 Her Heart Desires to help Others
               </p>
 
-              <Button label="Show more" iconUrl={arrowRight} />
+              <a href="#about-us"><Button label="Show more" iconUrl={arrowRight} /></a>
 
               <div className="flex
                 justify-start items-start flex-wrap w-full mt-20 gap-16">
@@ -44,15 +44,15 @@ const Foundation = () => {
           <div className='relative flex-1 flex justify-center
             items-center xl:min-h-screen xl:py-30 bg-cover bg-center'>
             <img src={EventImage}
-               alt="shoe 1" 
+               alt="event" 
                width={610}
                height={500}
                className='object-contain rounded-lg border-coral-red border-2'/>
             <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%]">
-              {eventsImages.map((shoe) =>
-                <div key={shoe}>
-                  <ShoeCard imgUrl={shoe}
-                  changeEventImage={(shoe) => SetEventImage(shoe)}
+              {eventsImages.map((ev) =>
+                <div key={ev}>
+                  <EventCard imgUrl={ev}
+                  changeEventImage={(ev) => SetEventImage(ev)}
                   EventImage={EventImage}/>
                 </div>
               )}

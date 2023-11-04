@@ -1,17 +1,18 @@
-import { headerLogo, ljflogo } from "../assets/images";
+import { ljflogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from '../constants';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
         <nav className="flex justify-between items-center max-container">
-            <a href="/">
+            <Link to="">
                 <img src={ljflogo} 
-                    alt=""
+                    alt="Libong Joanna Foundation"
                     width={40}
                     height={25}/>
-            </a>
+            </Link>
             <ul className="flex-1 
                 flex 
                 justify-center
@@ -19,10 +20,10 @@ const Nav = () => {
                 gap-16 max-md:hidden">
                     {navLinks.map((item) =>
                         <li key={item.label}>
-                            <a href={item.href}
+                            <Link to={item.href}
                                 className="font-montserrat leading-normal text-lg text-slate-gray">
                                     {item.label}
-                                </a>
+                                </Link>
                         </li>
                     )}
             </ul>

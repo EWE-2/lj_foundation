@@ -32,6 +32,7 @@ import actor3 from './swin/actor3.jpg'
 
 import event1 from './swin/event1.jpg'
 import event2 from './swin/event2.jpg'
+import about from './swin/about.png'
 
 export {
     bigShoe1,
@@ -66,5 +67,6 @@ export {
     actor3,
 
     event1,
-    event2
+    event2,
+    about
 }

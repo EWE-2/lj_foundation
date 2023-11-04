@@ -9,7 +9,6 @@ const Footer = () => {
             <img src={ljflogo}
             width={30} height={30} alt="" />
           </a>
-          
         </div>
       </div>
     </footer>

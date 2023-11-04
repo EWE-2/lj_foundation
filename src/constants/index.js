@@ -1,4 +1,4 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+import { facebook, instagram, shieldTick, support, education, twitter, info, finance } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, 
     customer1, customer2, 
     shoe4, shoe5, shoe6, shoe7, 
@@ -9,7 +9,7 @@ import { bigShoe1, bigShoe2, bigShoe3,
     event1, event2 } from "../assets/images";
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
+    { href: ``, label: "Home" },
     { href: "#about-us", label: "About Us" },
     { href: "#event", label: "Events" },
     { href: "#contact-us", label: "Contact Us" },
@@ -68,10 +68,25 @@ export const events = [
     },
 ]
 
+export const contacts = [
+    {
+        title: "Information",
+        imgUrl: info,
+        email: "josephligonb@gmail.com",
+        phonenumber: "+237 XXXXXXXXX",
+    },
+    {
+        title: "Donation",
+        imgUrl: finance,
+        email: "josephligonb@gmail.com",
+        phonenumber: "+237 XXXXXXXXX",
+    },
+]
+
 export const statistics = [
     { value: '10', label: 'Members' },
     { value: '12', label: 'Events' },
-    { value: '4', label: 'Partners' },
+    { value: '6', label: 'Partners' },
 ];
 
 export const products = [
@@ -99,7 +114,7 @@ export const products = [
 
 export const services = [
     {
-        imgUrl: truckFast,
+        imgUrl: education,
         label: "Education",
         subtext: "We provide sholarship to vulnerable and brillant children, didactic materials to shools of the Mondoni community "
     },

@@ -1,4 +1,4 @@
-const ShoeCard = ({ imgUrl, changeEventImage, EventImage}) => {
+const EventCard = ({ imgUrl, changeEventImage, EventImage}) => {
   const handleClick = () => {
     if(EventImage !== imgUrl.eventImg){
         changeEventImage(imgUrl.eventImg)
@@ -26,4 +26,4 @@ const ShoeCard = ({ imgUrl, changeEventImage, EventImage}) => {
   )
 }
 
-export default ShoeCard
+export default EventCard

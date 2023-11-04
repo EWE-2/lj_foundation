@@ -1,7 +1,8 @@
 //Jiovana Libong Foundattion : Home page
 //Imports
 import Nav from './components/Nav.jsx';
-import { Foundation, SuperQuality, PopularPro, Services, SpecialOffer, LastEvent, Subscribe, Footer} from './index.js';
+import { Foundation, SuperQuality, PopularPro, Services, AboutUs, StaffMember, Subscribe, Footer} from './index.js';
+
 
 const App = () => (
   <main className="relative">
@@ -19,14 +20,14 @@ const App = () => (
     <section className="padding-x py-10">
       <Services />
     </section>
-    {/* <section className="padding">
-      <SpecialOffer />
-    </section> */}
     <section className="bg-blue-100 padding">
-      <LastEvent />
+      <StaffMember />
     </section>
-    <section className="padding-x sm:py-32 py-16 w-full">
+    <section className="padding-x sm:py-20 py-6 w-full">
       <Subscribe />
+    </section>
+    <section className=" bg-blue-100">
+      <AboutUs />
     </section>
     <section className="bg-black padding-x padding-t pb-8">
       <Footer />
